@@ -1,4 +1,4 @@
-#Project Name = EquiLang Analysis
+#Project Name = EquiLang
 #Author = Moumita Ray
 #Starting Date = 12-04-2024
 #Ending Date = 
