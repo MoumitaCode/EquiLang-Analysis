@@ -1,7 +1,7 @@
 #Project Name = EquiLang
 #Author = Moumita Ray
 #Starting Date = 12-04-2024
-#Ending Date = 
+#Ending Date = 12-10-2024
 
 #Import the libraries
 import pandas as pd
