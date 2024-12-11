@@ -18,11 +18,15 @@ def load_data():
         print("The file was not found. Please check the path.")
         return None
 
+#Welcome page
+print("Welcome to the EquiLang Analysis Tool!")
+print("This tool will help you explore data related to English Language Learners (ELL).")
+
 # Main program
 def main():
     data = load_data()
     if data is not None:
-        print("Please choice what you want an analysis on:")
+        print("Please choose what you want an analysis on:")
         print("1. Total English Language Learners in 50 states")
         print("2. Students with disabilities under IDEA in Michigan")
         print("3. Visualizations")
@@ -60,7 +64,7 @@ def students_with_disabilities(data):
 
     print(f"Total students with disabilities in Michigan: {total_disabilities}")
     print("Percentage of students with disabilities in Michigan: " + str(disability_percent) + "%")
-    print("---------------------------------------------")
+    print("---------------------------------------------------------")
 
 
 # Choice 3 Function for visualizations
@@ -104,7 +108,7 @@ def visualizations(data):
             percentages = [6.5, 76.5, 4.3, 10.6, 0.7]
 
             # Create the pie chart
-            plt.pie(percentages, labels=race_ethnicity, autopct='%1.1f%%', startangle=90)
+            plt.pie(percentages, labels=race_ethnicity, autopct='%1.1f%%', startangle=90, pctdistance=0.85)
             plt.title('Total Percentage of ELL Students by Race/Ethnicity')
             plt.axis('equal') 
             plt.show()
